@@ -1,0 +1,3 @@
+[submodule "hedera-protobufs-java"]
+	path = hedera-protobufs-java
+	url = https://github.com/hashgraph/hedera-protobufs-java.git
