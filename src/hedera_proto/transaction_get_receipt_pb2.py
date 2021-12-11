@@ -23,7 +23,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'\n\"com.hederahashgraph.api.proto.javaP\001',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x1dtransaction_get_receipt.proto\x12\x05proto\x1a\x19transaction_receipt.proto\x1a\x11\x62\x61sic_types.proto\x1a\x12query_header.proto\x1a\x15response_header.proto\"\x88\x01\n\x1aTransactionGetReceiptQuery\x12\"\n\x06header\x18\x01 \x01(\x0b\x32\x12.proto.QueryHeader\x12+\n\rtransactionID\x18\x02 \x01(\x0b\x32\x14.proto.TransactionID\x12\x19\n\x11includeDuplicates\x18\x03 \x01(\x08\"\xb3\x01\n\x1dTransactionGetReceiptResponse\x12%\n\x06header\x18\x01 \x01(\x0b\x32\x15.proto.ResponseHeader\x12*\n\x07receipt\x18\x02 \x01(\x0b\x32\x19.proto.TransactionReceipt\x12?\n\x1c\x64uplicateTransactionReceipts\x18\x04 \x03(\x0b\x32\x19.proto.TransactionReceiptB&\n\"com.hederahashgraph.api.proto.javaP\x01\x62\x06proto3'
+  serialized_pb=b'\n\x1dtransaction_get_receipt.proto\x12\x05proto\x1a\x19transaction_receipt.proto\x1a\x11\x62\x61sic_types.proto\x1a\x12query_header.proto\x1a\x15response_header.proto\"\xa8\x01\n\x1aTransactionGetReceiptQuery\x12\"\n\x06header\x18\x01 \x01(\x0b\x32\x12.proto.QueryHeader\x12+\n\rtransactionID\x18\x02 \x01(\x0b\x32\x14.proto.TransactionID\x12\x19\n\x11includeDuplicates\x18\x03 \x01(\x08\x12\x1e\n\x16include_child_receipts\x18\x04 \x01(\x08\"\xf2\x01\n\x1dTransactionGetReceiptResponse\x12%\n\x06header\x18\x01 \x01(\x0b\x32\x15.proto.ResponseHeader\x12*\n\x07receipt\x18\x02 \x01(\x0b\x32\x19.proto.TransactionReceipt\x12?\n\x1c\x64uplicateTransactionReceipts\x18\x04 \x03(\x0b\x32\x19.proto.TransactionReceipt\x12=\n\x1a\x63hild_transaction_receipts\x18\x05 \x03(\x0b\x32\x19.proto.TransactionReceiptB&\n\"com.hederahashgraph.api.proto.javaP\x01\x62\x06proto3'
   ,
   dependencies=[transaction__receipt__pb2.DESCRIPTOR,basic__types__pb2.DESCRIPTOR,query__header__pb2.DESCRIPTOR,response__header__pb2.DESCRIPTOR,])
 
@@ -59,6 +59,13 @@ _TRANSACTIONGETRECEIPTQUERY = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='include_child_receipts', full_name='proto.TransactionGetReceiptQuery.include_child_receipts', index=3,
+      number=4, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -72,7 +79,7 @@ _TRANSACTIONGETRECEIPTQUERY = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=130,
-  serialized_end=266,
+  serialized_end=298,
 )
 
 
@@ -105,6 +112,13 @@ _TRANSACTIONGETRECEIPTRESPONSE = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='child_transaction_receipts', full_name='proto.TransactionGetReceiptResponse.child_transaction_receipts', index=3,
+      number=5, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -117,8 +131,8 @@ _TRANSACTIONGETRECEIPTRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=269,
-  serialized_end=448,
+  serialized_start=301,
+  serialized_end=543,
 )
 
 _TRANSACTIONGETRECEIPTQUERY.fields_by_name['header'].message_type = query__header__pb2._QUERYHEADER
@@ -126,6 +140,7 @@ _TRANSACTIONGETRECEIPTQUERY.fields_by_name['transactionID'].message_type = basic
 _TRANSACTIONGETRECEIPTRESPONSE.fields_by_name['header'].message_type = response__header__pb2._RESPONSEHEADER
 _TRANSACTIONGETRECEIPTRESPONSE.fields_by_name['receipt'].message_type = transaction__receipt__pb2._TRANSACTIONRECEIPT
 _TRANSACTIONGETRECEIPTRESPONSE.fields_by_name['duplicateTransactionReceipts'].message_type = transaction__receipt__pb2._TRANSACTIONRECEIPT
+_TRANSACTIONGETRECEIPTRESPONSE.fields_by_name['child_transaction_receipts'].message_type = transaction__receipt__pb2._TRANSACTIONRECEIPT
 DESCRIPTOR.message_types_by_name['TransactionGetReceiptQuery'] = _TRANSACTIONGETRECEIPTQUERY
 DESCRIPTOR.message_types_by_name['TransactionGetReceiptResponse'] = _TRANSACTIONGETRECEIPTRESPONSE
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)

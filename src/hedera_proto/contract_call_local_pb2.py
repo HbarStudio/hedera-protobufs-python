@@ -22,7 +22,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'\n\"com.hederahashgraph.api.proto.javaP\001',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x19\x63ontract_call_local.proto\x12\x05proto\x1a\x11\x62\x61sic_types.proto\x1a\x12query_header.proto\x1a\x15response_header.proto\"d\n\x0f\x43ontractLoginfo\x12%\n\ncontractID\x18\x01 \x01(\x0b\x32\x11.proto.ContractID\x12\r\n\x05\x62loom\x18\x02 \x01(\x0c\x12\r\n\x05topic\x18\x03 \x03(\x0c\x12\x0c\n\x04\x64\x61ta\x18\x04 \x01(\x0c\"\xe9\x01\n\x16\x43ontractFunctionResult\x12%\n\ncontractID\x18\x01 \x01(\x0b\x32\x11.proto.ContractID\x12\x1a\n\x12\x63ontractCallResult\x18\x02 \x01(\x0c\x12\x14\n\x0c\x65rrorMessage\x18\x03 \x01(\t\x12\r\n\x05\x62loom\x18\x04 \x01(\x0c\x12\x0f\n\x07gasUsed\x18\x05 \x01(\x04\x12\'\n\x07logInfo\x18\x06 \x03(\x0b\x32\x16.proto.ContractLoginfo\x12-\n\x12\x63reatedContractIDs\x18\x07 \x03(\x0b\x32\x11.proto.ContractID\"\xa3\x01\n\x16\x43ontractCallLocalQuery\x12\"\n\x06header\x18\x01 \x01(\x0b\x32\x12.proto.QueryHeader\x12%\n\ncontractID\x18\x02 \x01(\x0b\x32\x11.proto.ContractID\x12\x0b\n\x03gas\x18\x03 \x01(\x03\x12\x1a\n\x12\x66unctionParameters\x18\x04 \x01(\x0c\x12\x15\n\rmaxResultSize\x18\x05 \x01(\x03\"y\n\x19\x43ontractCallLocalResponse\x12%\n\x06header\x18\x01 \x01(\x0b\x32\x15.proto.ResponseHeader\x12\x35\n\x0e\x66unctionResult\x18\x02 \x01(\x0b\x32\x1d.proto.ContractFunctionResultB&\n\"com.hederahashgraph.api.proto.javaP\x01\x62\x06proto3'
+  serialized_pb=b'\n\x19\x63ontract_call_local.proto\x12\x05proto\x1a\x11\x62\x61sic_types.proto\x1a\x12query_header.proto\x1a\x15response_header.proto\"d\n\x0f\x43ontractLoginfo\x12%\n\ncontractID\x18\x01 \x01(\x0b\x32\x11.proto.ContractID\x12\r\n\x05\x62loom\x18\x02 \x01(\x0c\x12\r\n\x05topic\x18\x03 \x03(\x0c\x12\x0c\n\x04\x64\x61ta\x18\x04 \x01(\x0c\"\xe9\x01\n\x16\x43ontractFunctionResult\x12%\n\ncontractID\x18\x01 \x01(\x0b\x32\x11.proto.ContractID\x12\x1a\n\x12\x63ontractCallResult\x18\x02 \x01(\x0c\x12\x14\n\x0c\x65rrorMessage\x18\x03 \x01(\t\x12\r\n\x05\x62loom\x18\x04 \x01(\x0c\x12\x0f\n\x07gasUsed\x18\x05 \x01(\x04\x12\'\n\x07logInfo\x18\x06 \x03(\x0b\x32\x16.proto.ContractLoginfo\x12-\n\x12\x63reatedContractIDs\x18\x07 \x03(\x0b\x32\x11.proto.ContractID\"\xa7\x01\n\x16\x43ontractCallLocalQuery\x12\"\n\x06header\x18\x01 \x01(\x0b\x32\x12.proto.QueryHeader\x12%\n\ncontractID\x18\x02 \x01(\x0b\x32\x11.proto.ContractID\x12\x0b\n\x03gas\x18\x03 \x01(\x03\x12\x1a\n\x12\x66unctionParameters\x18\x04 \x01(\x0c\x12\x19\n\rmaxResultSize\x18\x05 \x01(\x03\x42\x02\x18\x01\"y\n\x19\x43ontractCallLocalResponse\x12%\n\x06header\x18\x01 \x01(\x0b\x32\x15.proto.ResponseHeader\x12\x35\n\x0e\x66unctionResult\x18\x02 \x01(\x0b\x32\x1d.proto.ContractFunctionResultB&\n\"com.hederahashgraph.api.proto.javaP\x01\x62\x06proto3'
   ,
   dependencies=[basic__types__pb2.DESCRIPTOR,query__header__pb2.DESCRIPTOR,response__header__pb2.DESCRIPTOR,])
 
@@ -198,7 +198,7 @@ _CONTRACTCALLLOCALQUERY = _descriptor.Descriptor(
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+      serialized_options=b'\030\001', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -212,7 +212,7 @@ _CONTRACTCALLLOCALQUERY = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=437,
-  serialized_end=600,
+  serialized_end=604,
 )
 
 
@@ -250,8 +250,8 @@ _CONTRACTCALLLOCALRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=602,
-  serialized_end=723,
+  serialized_start=606,
+  serialized_end=727,
 )
 
 _CONTRACTLOGINFO.fields_by_name['contractID'].message_type = basic__types__pb2._CONTRACTID
@@ -298,4 +298,5 @@ _sym_db.RegisterMessage(ContractCallLocalResponse)
 
 
 DESCRIPTOR._options = None
+_CONTRACTCALLLOCALQUERY.fields_by_name['maxResultSize']._options = None
 # @@protoc_insertion_point(module_scope)

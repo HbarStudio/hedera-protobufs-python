@@ -23,7 +23,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'\n\"com.hederahashgraph.api.proto.javaP\001',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x15\x63ontract_update.proto\x12\x05proto\x1a\x11\x62\x61sic_types.proto\x1a\x0e\x64uration.proto\x1a\x0ftimestamp.proto\x1a\x1egoogle/protobuf/wrappers.proto\"\xd7\x02\n\x1d\x43ontractUpdateTransactionBody\x12%\n\ncontractID\x18\x01 \x01(\x0b\x32\x11.proto.ContractID\x12(\n\x0e\x65xpirationTime\x18\x02 \x01(\x0b\x32\x10.proto.Timestamp\x12\x1c\n\x08\x61\x64minKey\x18\x03 \x01(\x0b\x32\n.proto.Key\x12(\n\x0eproxyAccountID\x18\x06 \x01(\x0b\x32\x10.proto.AccountID\x12(\n\x0f\x61utoRenewPeriod\x18\x07 \x01(\x0b\x32\x0f.proto.Duration\x12\x1d\n\x06\x66ileID\x18\x08 \x01(\x0b\x32\r.proto.FileID\x12\x12\n\x04memo\x18\t \x01(\tB\x02\x18\x01H\x00\x12\x33\n\x0bmemoWrapper\x18\n \x01(\x0b\x32\x1c.google.protobuf.StringValueH\x00\x42\x0b\n\tmemoFieldB&\n\"com.hederahashgraph.api.proto.javaP\x01\x62\x06proto3'
+  serialized_pb=b'\n\x15\x63ontract_update.proto\x12\x05proto\x1a\x11\x62\x61sic_types.proto\x1a\x0e\x64uration.proto\x1a\x0ftimestamp.proto\x1a\x1egoogle/protobuf/wrappers.proto\"\xdb\x02\n\x1d\x43ontractUpdateTransactionBody\x12%\n\ncontractID\x18\x01 \x01(\x0b\x32\x11.proto.ContractID\x12(\n\x0e\x65xpirationTime\x18\x02 \x01(\x0b\x32\x10.proto.Timestamp\x12\x1c\n\x08\x61\x64minKey\x18\x03 \x01(\x0b\x32\n.proto.Key\x12(\n\x0eproxyAccountID\x18\x06 \x01(\x0b\x32\x10.proto.AccountID\x12(\n\x0f\x61utoRenewPeriod\x18\x07 \x01(\x0b\x32\x0f.proto.Duration\x12!\n\x06\x66ileID\x18\x08 \x01(\x0b\x32\r.proto.FileIDB\x02\x18\x01\x12\x12\n\x04memo\x18\t \x01(\tB\x02\x18\x01H\x00\x12\x33\n\x0bmemoWrapper\x18\n \x01(\x0b\x32\x1c.google.protobuf.StringValueH\x00\x42\x0b\n\tmemoFieldB&\n\"com.hederahashgraph.api.proto.javaP\x01\x62\x06proto3'
   ,
   dependencies=[basic__types__pb2.DESCRIPTOR,duration__pb2.DESCRIPTOR,timestamp__pb2.DESCRIPTOR,google_dot_protobuf_dot_wrappers__pb2.DESCRIPTOR,])
 
@@ -79,7 +79,7 @@ _CONTRACTUPDATETRANSACTIONBODY = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+      serialized_options=b'\030\001', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='memo', full_name='proto.ContractUpdateTransactionBody.memo', index=6,
       number=9, type=9, cpp_type=9, label=1,
@@ -112,7 +112,7 @@ _CONTRACTUPDATETRANSACTIONBODY = _descriptor.Descriptor(
     fields=[]),
   ],
   serialized_start=117,
-  serialized_end=460,
+  serialized_end=464,
 )
 
 _CONTRACTUPDATETRANSACTIONBODY.fields_by_name['contractID'].message_type = basic__types__pb2._CONTRACTID
@@ -140,5 +140,6 @@ _sym_db.RegisterMessage(ContractUpdateTransactionBody)
 
 
 DESCRIPTOR._options = None
+_CONTRACTUPDATETRANSACTIONBODY.fields_by_name['fileID']._options = None
 _CONTRACTUPDATETRANSACTIONBODY.fields_by_name['memo']._options = None
 # @@protoc_insertion_point(module_scope)

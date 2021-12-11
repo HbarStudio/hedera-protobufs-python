@@ -23,7 +23,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'\n\"com.hederahashgraph.api.proto.javaP\001',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x1ctransaction_get_record.proto\x12\x05proto\x1a\x18transaction_record.proto\x1a\x11\x62\x61sic_types.proto\x1a\x12query_header.proto\x1a\x15response_header.proto\"\x87\x01\n\x19TransactionGetRecordQuery\x12\"\n\x06header\x18\x01 \x01(\x0b\x32\x12.proto.QueryHeader\x12+\n\rtransactionID\x18\x02 \x01(\x0b\x32\x14.proto.TransactionID\x12\x19\n\x11includeDuplicates\x18\x03 \x01(\x08\"\xb9\x01\n\x1cTransactionGetRecordResponse\x12%\n\x06header\x18\x01 \x01(\x0b\x32\x15.proto.ResponseHeader\x12\x33\n\x11transactionRecord\x18\x03 \x01(\x0b\x32\x18.proto.TransactionRecord\x12=\n\x1b\x64uplicateTransactionRecords\x18\x04 \x03(\x0b\x32\x18.proto.TransactionRecordB&\n\"com.hederahashgraph.api.proto.javaP\x01\x62\x06proto3'
+  serialized_pb=b'\n\x1ctransaction_get_record.proto\x12\x05proto\x1a\x18transaction_record.proto\x1a\x11\x62\x61sic_types.proto\x1a\x12query_header.proto\x1a\x15response_header.proto\"\xa6\x01\n\x19TransactionGetRecordQuery\x12\"\n\x06header\x18\x01 \x01(\x0b\x32\x12.proto.QueryHeader\x12+\n\rtransactionID\x18\x02 \x01(\x0b\x32\x14.proto.TransactionID\x12\x19\n\x11includeDuplicates\x18\x03 \x01(\x08\x12\x1d\n\x15include_child_records\x18\x04 \x01(\x08\"\xf6\x01\n\x1cTransactionGetRecordResponse\x12%\n\x06header\x18\x01 \x01(\x0b\x32\x15.proto.ResponseHeader\x12\x33\n\x11transactionRecord\x18\x03 \x01(\x0b\x32\x18.proto.TransactionRecord\x12=\n\x1b\x64uplicateTransactionRecords\x18\x04 \x03(\x0b\x32\x18.proto.TransactionRecord\x12;\n\x19\x63hild_transaction_records\x18\x05 \x03(\x0b\x32\x18.proto.TransactionRecordB&\n\"com.hederahashgraph.api.proto.javaP\x01\x62\x06proto3'
   ,
   dependencies=[transaction__record__pb2.DESCRIPTOR,basic__types__pb2.DESCRIPTOR,query__header__pb2.DESCRIPTOR,response__header__pb2.DESCRIPTOR,])
 
@@ -59,6 +59,13 @@ _TRANSACTIONGETRECORDQUERY = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='include_child_records', full_name='proto.TransactionGetRecordQuery.include_child_records', index=3,
+      number=4, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -72,7 +79,7 @@ _TRANSACTIONGETRECORDQUERY = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=128,
-  serialized_end=263,
+  serialized_end=294,
 )
 
 
@@ -105,6 +112,13 @@ _TRANSACTIONGETRECORDRESPONSE = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='child_transaction_records', full_name='proto.TransactionGetRecordResponse.child_transaction_records', index=3,
+      number=5, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -117,8 +131,8 @@ _TRANSACTIONGETRECORDRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=266,
-  serialized_end=451,
+  serialized_start=297,
+  serialized_end=543,
 )
 
 _TRANSACTIONGETRECORDQUERY.fields_by_name['header'].message_type = query__header__pb2._QUERYHEADER
@@ -126,6 +140,7 @@ _TRANSACTIONGETRECORDQUERY.fields_by_name['transactionID'].message_type = basic_
 _TRANSACTIONGETRECORDRESPONSE.fields_by_name['header'].message_type = response__header__pb2._RESPONSEHEADER
 _TRANSACTIONGETRECORDRESPONSE.fields_by_name['transactionRecord'].message_type = transaction__record__pb2._TRANSACTIONRECORD
 _TRANSACTIONGETRECORDRESPONSE.fields_by_name['duplicateTransactionRecords'].message_type = transaction__record__pb2._TRANSACTIONRECORD
+_TRANSACTIONGETRECORDRESPONSE.fields_by_name['child_transaction_records'].message_type = transaction__record__pb2._TRANSACTIONRECORD
 DESCRIPTOR.message_types_by_name['TransactionGetRecordQuery'] = _TRANSACTIONGETRECORDQUERY
 DESCRIPTOR.message_types_by_name['TransactionGetRecordResponse'] = _TRANSACTIONGETRECORDRESPONSE
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)

@@ -25,7 +25,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'\n\"com.hederahashgraph.api.proto.javaP\001',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x15\x63rypto_get_info.proto\x12\x05proto\x1a\x0ftimestamp.proto\x1a\x0e\x64uration.proto\x1a\x11\x62\x61sic_types.proto\x1a\x12query_header.proto\x1a\x15response_header.proto\x1a\x1a\x63rypto_add_live_hash.proto\"]\n\x12\x43ryptoGetInfoQuery\x12\"\n\x06header\x18\x01 \x01(\x0b\x32\x12.proto.QueryHeader\x12#\n\taccountID\x18\x02 \x01(\x0b\x32\x10.proto.AccountID\"\xb5\x05\n\x15\x43ryptoGetInfoResponse\x12%\n\x06header\x18\x01 \x01(\x0b\x32\x15.proto.ResponseHeader\x12=\n\x0b\x61\x63\x63ountInfo\x18\x02 \x01(\x0b\x32(.proto.CryptoGetInfoResponse.AccountInfo\x1a\xb5\x04\n\x0b\x41\x63\x63ountInfo\x12#\n\taccountID\x18\x01 \x01(\x0b\x32\x10.proto.AccountID\x12\x19\n\x11\x63ontractAccountID\x18\x02 \x01(\t\x12\x0f\n\x07\x64\x65leted\x18\x03 \x01(\x08\x12(\n\x0eproxyAccountID\x18\x04 \x01(\x0b\x32\x10.proto.AccountID\x12\x15\n\rproxyReceived\x18\x06 \x01(\x03\x12\x17\n\x03key\x18\x07 \x01(\x0b\x32\n.proto.Key\x12\x0f\n\x07\x62\x61lance\x18\x08 \x01(\x04\x12\'\n\x1bgenerateSendRecordThreshold\x18\t \x01(\x04\x42\x02\x18\x01\x12*\n\x1egenerateReceiveRecordThreshold\x18\n \x01(\x04\x42\x02\x18\x01\x12\x1b\n\x13receiverSigRequired\x18\x0b \x01(\x08\x12(\n\x0e\x65xpirationTime\x18\x0c \x01(\x0b\x32\x10.proto.Timestamp\x12(\n\x0f\x61utoRenewPeriod\x18\r \x01(\x0b\x32\x0f.proto.Duration\x12#\n\nliveHashes\x18\x0e \x03(\x0b\x32\x0f.proto.LiveHash\x12\x34\n\x12tokenRelationships\x18\x0f \x03(\x0b\x32\x18.proto.TokenRelationship\x12\x0c\n\x04memo\x18\x10 \x01(\t\x12\x11\n\townedNfts\x18\x11 \x01(\x03\x12(\n max_automatic_token_associations\x18\x12 \x01(\x05\x42&\n\"com.hederahashgraph.api.proto.javaP\x01\x62\x06proto3'
+  serialized_pb=b'\n\x15\x63rypto_get_info.proto\x12\x05proto\x1a\x0ftimestamp.proto\x1a\x0e\x64uration.proto\x1a\x11\x62\x61sic_types.proto\x1a\x12query_header.proto\x1a\x15response_header.proto\x1a\x1a\x63rypto_add_live_hash.proto\"]\n\x12\x43ryptoGetInfoQuery\x12\"\n\x06header\x18\x01 \x01(\x0b\x32\x12.proto.QueryHeader\x12#\n\taccountID\x18\x02 \x01(\x0b\x32\x10.proto.AccountID\"\xc4\x05\n\x15\x43ryptoGetInfoResponse\x12%\n\x06header\x18\x01 \x01(\x0b\x32\x15.proto.ResponseHeader\x12=\n\x0b\x61\x63\x63ountInfo\x18\x02 \x01(\x0b\x32(.proto.CryptoGetInfoResponse.AccountInfo\x1a\xc4\x04\n\x0b\x41\x63\x63ountInfo\x12#\n\taccountID\x18\x01 \x01(\x0b\x32\x10.proto.AccountID\x12\x19\n\x11\x63ontractAccountID\x18\x02 \x01(\t\x12\x0f\n\x07\x64\x65leted\x18\x03 \x01(\x08\x12(\n\x0eproxyAccountID\x18\x04 \x01(\x0b\x32\x10.proto.AccountID\x12\x15\n\rproxyReceived\x18\x06 \x01(\x03\x12\x17\n\x03key\x18\x07 \x01(\x0b\x32\n.proto.Key\x12\x0f\n\x07\x62\x61lance\x18\x08 \x01(\x04\x12\'\n\x1bgenerateSendRecordThreshold\x18\t \x01(\x04\x42\x02\x18\x01\x12*\n\x1egenerateReceiveRecordThreshold\x18\n \x01(\x04\x42\x02\x18\x01\x12\x1b\n\x13receiverSigRequired\x18\x0b \x01(\x08\x12(\n\x0e\x65xpirationTime\x18\x0c \x01(\x0b\x32\x10.proto.Timestamp\x12(\n\x0f\x61utoRenewPeriod\x18\r \x01(\x0b\x32\x0f.proto.Duration\x12#\n\nliveHashes\x18\x0e \x03(\x0b\x32\x0f.proto.LiveHash\x12\x34\n\x12tokenRelationships\x18\x0f \x03(\x0b\x32\x18.proto.TokenRelationship\x12\x0c\n\x04memo\x18\x10 \x01(\t\x12\x11\n\townedNfts\x18\x11 \x01(\x03\x12(\n max_automatic_token_associations\x18\x12 \x01(\x05\x12\r\n\x05\x61lias\x18\x13 \x01(\x0c\x42&\n\"com.hederahashgraph.api.proto.javaP\x01\x62\x06proto3'
   ,
   dependencies=[timestamp__pb2.DESCRIPTOR,duration__pb2.DESCRIPTOR,basic__types__pb2.DESCRIPTOR,query__header__pb2.DESCRIPTOR,response__header__pb2.DESCRIPTOR,crypto__add__live__hash__pb2.DESCRIPTOR,])
 
@@ -198,6 +198,13 @@ _CRYPTOGETINFORESPONSE_ACCOUNTINFO = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='alias', full_name='proto.CryptoGetInfoResponse.AccountInfo.alias', index=17,
+      number=19, type=12, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"",
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -211,7 +218,7 @@ _CRYPTOGETINFORESPONSE_ACCOUNTINFO = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=379,
-  serialized_end=944,
+  serialized_end=959,
 )
 
 _CRYPTOGETINFORESPONSE = _descriptor.Descriptor(
@@ -249,7 +256,7 @@ _CRYPTOGETINFORESPONSE = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=251,
-  serialized_end=944,
+  serialized_end=959,
 )
 
 _CRYPTOGETINFOQUERY.fields_by_name['header'].message_type = query__header__pb2._QUERYHEADER

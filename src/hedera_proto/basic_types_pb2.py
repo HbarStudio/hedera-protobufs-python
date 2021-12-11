@@ -21,7 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'\n\"com.hederahashgraph.api.proto.javaP\001',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x11\x62\x61sic_types.proto\x12\x05proto\x1a\x0ftimestamp.proto\"\x1b\n\x07ShardID\x12\x10\n\x08shardNum\x18\x01 \x01(\x03\"-\n\x07RealmID\x12\x10\n\x08shardNum\x18\x01 \x01(\x03\x12\x10\n\x08realmNum\x18\x02 \x01(\x03\"C\n\tAccountID\x12\x10\n\x08shardNum\x18\x01 \x01(\x03\x12\x10\n\x08realmNum\x18\x02 \x01(\x03\x12\x12\n\naccountNum\x18\x03 \x01(\x03\"=\n\x06\x46ileID\x12\x10\n\x08shardNum\x18\x01 \x01(\x03\x12\x10\n\x08realmNum\x18\x02 \x01(\x03\x12\x0f\n\x07\x66ileNum\x18\x03 \x01(\x03\"E\n\nContractID\x12\x10\n\x08shardNum\x18\x01 \x01(\x03\x12\x10\n\x08realmNum\x18\x02 \x01(\x03\x12\x13\n\x0b\x63ontractNum\x18\x03 \x01(\x03\"x\n\rTransactionID\x12/\n\x15transactionValidStart\x18\x01 \x01(\x0b\x32\x10.proto.Timestamp\x12#\n\taccountID\x18\x02 \x01(\x0b\x32\x10.proto.AccountID\x12\x11\n\tscheduled\x18\x03 \x01(\x08\"D\n\rAccountAmount\x12#\n\taccountID\x18\x01 \x01(\x0b\x32\x10.proto.AccountID\x12\x0e\n\x06\x61mount\x18\x02 \x01(\x12\"<\n\x0cTransferList\x12,\n\x0e\x61\x63\x63ountAmounts\x18\x01 \x03(\x0b\x32\x14.proto.AccountAmount\"{\n\x0bNftTransfer\x12)\n\x0fsenderAccountID\x18\x01 \x01(\x0b\x32\x10.proto.AccountID\x12+\n\x11receiverAccountID\x18\x02 \x01(\x0b\x32\x10.proto.AccountID\x12\x14\n\x0cserialNumber\x18\x03 \x01(\x03\"\x85\x01\n\x11TokenTransferList\x12\x1d\n\x05token\x18\x01 \x01(\x0b\x32\x0e.proto.TokenID\x12\'\n\ttransfers\x18\x02 \x03(\x0b\x32\x14.proto.AccountAmount\x12(\n\x0cnftTransfers\x18\x03 \x03(\x0b\x32\x12.proto.NftTransfer\"2\n\x08\x46raction\x12\x11\n\tnumerator\x18\x01 \x01(\x03\x12\x13\n\x0b\x64\x65nominator\x18\x02 \x01(\x03\"?\n\x07TopicID\x12\x10\n\x08shardNum\x18\x01 \x01(\x03\x12\x10\n\x08realmNum\x18\x02 \x01(\x03\x12\x10\n\x08topicNum\x18\x03 \x01(\x03\"?\n\x07TokenID\x12\x10\n\x08shardNum\x18\x01 \x01(\x03\x12\x10\n\x08realmNum\x18\x02 \x01(\x03\x12\x10\n\x08tokenNum\x18\x03 \x01(\x03\"E\n\nScheduleID\x12\x10\n\x08shardNum\x18\x01 \x01(\x03\x12\x10\n\x08realmNum\x18\x02 \x01(\x03\x12\x13\n\x0bscheduleNum\x18\x03 \x01(\x03\"\xc1\x01\n\x03Key\x12\'\n\ncontractID\x18\x01 \x01(\x0b\x32\x11.proto.ContractIDH\x00\x12\x11\n\x07\x65\x64\x32\x35\x35\x31\x39\x18\x02 \x01(\x0cH\x00\x12\x12\n\x08RSA_3072\x18\x03 \x01(\x0cH\x00\x12\x13\n\tECDSA_384\x18\x04 \x01(\x0cH\x00\x12+\n\x0cthresholdKey\x18\x05 \x01(\x0b\x32\x13.proto.ThresholdKeyH\x00\x12!\n\x07keyList\x18\x06 \x01(\x0b\x32\x0e.proto.KeyListH\x00\x42\x05\n\x03key\"?\n\x0cThresholdKey\x12\x11\n\tthreshold\x18\x01 \x01(\r\x12\x1c\n\x04keys\x18\x02 \x01(\x0b\x32\x0e.proto.KeyList\"#\n\x07KeyList\x12\x18\n\x04keys\x18\x01 \x03(\x0b\x32\n.proto.Key\"\xd4\x01\n\tSignature\x12\x12\n\x08\x63ontract\x18\x01 \x01(\x0cH\x00\x12\x11\n\x07\x65\x64\x32\x35\x35\x31\x39\x18\x02 \x01(\x0cH\x00\x12\x12\n\x08RSA_3072\x18\x03 \x01(\x0cH\x00\x12\x13\n\tECDSA_384\x18\x04 \x01(\x0cH\x00\x12\x37\n\x12thresholdSignature\x18\x05 \x01(\x0b\x32\x19.proto.ThresholdSignatureH\x00\x12-\n\rsignatureList\x18\x06 \x01(\x0b\x32\x14.proto.SignatureListH\x00:\x02\x18\x01\x42\x0b\n\tsignature\"<\n\x12ThresholdSignature\x12\"\n\x04sigs\x18\x02 \x01(\x0b\x32\x14.proto.SignatureList:\x02\x18\x01\"3\n\rSignatureList\x12\x1e\n\x04sigs\x18\x02 \x03(\x0b\x32\x10.proto.Signature:\x02\x18\x01\"\x82\x01\n\rSignaturePair\x12\x14\n\x0cpubKeyPrefix\x18\x01 \x01(\x0c\x12\x12\n\x08\x63ontract\x18\x02 \x01(\x0cH\x00\x12\x11\n\x07\x65\x64\x32\x35\x35\x31\x39\x18\x03 \x01(\x0cH\x00\x12\x12\n\x08RSA_3072\x18\x04 \x01(\x0cH\x00\x12\x13\n\tECDSA_384\x18\x05 \x01(\x0cH\x00\x42\x0b\n\tsignature\"5\n\x0cSignatureMap\x12%\n\x07sigPair\x18\x01 \x03(\x0b\x32\x14.proto.SignaturePair\"\xa3\x01\n\rFeeComponents\x12\x0b\n\x03min\x18\x01 \x01(\x03\x12\x0b\n\x03max\x18\x02 \x01(\x03\x12\x10\n\x08\x63onstant\x18\x03 \x01(\x03\x12\x0b\n\x03\x62pt\x18\x04 \x01(\x03\x12\x0b\n\x03vpt\x18\x05 \x01(\x03\x12\x0b\n\x03rbh\x18\x06 \x01(\x03\x12\x0b\n\x03sbh\x18\x07 \x01(\x03\x12\x0b\n\x03gas\x18\x08 \x01(\x03\x12\n\n\x02tv\x18\t \x01(\x03\x12\x0b\n\x03\x62pr\x18\n \x01(\x03\x12\x0c\n\x04sbpr\x18\x0b \x01(\x03\"\x94\x01\n\x16TransactionFeeSchedule\x12\x37\n\x13hederaFunctionality\x18\x01 \x01(\x0e\x32\x1a.proto.HederaFunctionality\x12#\n\x07\x66\x65\x65\x44\x61ta\x18\x02 \x01(\x0b\x32\x0e.proto.FeeDataB\x02\x18\x01\x12\x1c\n\x04\x66\x65\x65s\x18\x03 \x03(\x0b\x32\x0e.proto.FeeData\"\xa8\x01\n\x07\x46\x65\x65\x44\x61ta\x12&\n\x08nodedata\x18\x01 \x01(\x0b\x32\x14.proto.FeeComponents\x12)\n\x0bnetworkdata\x18\x02 \x01(\x0b\x32\x14.proto.FeeComponents\x12)\n\x0bservicedata\x18\x03 \x01(\x0b\x32\x14.proto.FeeComponents\x12\x1f\n\x07subType\x18\x04 \x01(\x0e\x32\x0e.proto.SubType\"y\n\x0b\x46\x65\x65Schedule\x12=\n\x16transactionFeeSchedule\x18\x01 \x03(\x0b\x32\x1d.proto.TransactionFeeSchedule\x12+\n\nexpiryTime\x18\x02 \x01(\x0b\x32\x17.proto.TimestampSeconds\"x\n\x19\x43urrentAndNextFeeSchedule\x12.\n\x12\x63urrentFeeSchedule\x18\x01 \x01(\x0b\x32\x12.proto.FeeSchedule\x12+\n\x0fnextFeeSchedule\x18\x02 \x01(\x0b\x32\x12.proto.FeeSchedule\"4\n\x0fServiceEndpoint\x12\x13\n\x0bipAddressV4\x18\x01 \x01(\x0c\x12\x0c\n\x04port\x18\x02 \x01(\x05\"\x82\x02\n\x0bNodeAddress\x12\x15\n\tipAddress\x18\x01 \x01(\x0c\x42\x02\x18\x01\x12\x12\n\x06portno\x18\x02 \x01(\x05\x42\x02\x18\x01\x12\x10\n\x04memo\x18\x03 \x01(\x0c\x42\x02\x18\x01\x12\x12\n\nRSA_PubKey\x18\x04 \x01(\t\x12\x0e\n\x06nodeId\x18\x05 \x01(\x03\x12\'\n\rnodeAccountId\x18\x06 \x01(\x0b\x32\x10.proto.AccountID\x12\x14\n\x0cnodeCertHash\x18\x07 \x01(\x0c\x12/\n\x0fserviceEndpoint\x18\x08 \x03(\x0b\x32\x16.proto.ServiceEndpoint\x12\x13\n\x0b\x64\x65scription\x18\t \x01(\t\x12\r\n\x05stake\x18\n \x01(\x03\":\n\x0fNodeAddressBook\x12\'\n\x0bnodeAddress\x18\x01 \x03(\x0b\x32\x12.proto.NodeAddress\"Z\n\x0fSemanticVersion\x12\r\n\x05major\x18\x01 \x01(\x05\x12\r\n\x05minor\x18\x02 \x01(\x05\x12\r\n\x05patch\x18\x03 \x01(\x05\x12\x0b\n\x03pre\x18\x04 \x01(\t\x12\r\n\x05\x62uild\x18\x05 \x01(\t\"4\n\x07Setting\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t\x12\x0c\n\x04\x64\x61ta\x18\x03 \x01(\x0c\">\n\x19ServicesConfigurationList\x12!\n\tnameValue\x18\x01 \x03(\x0b\x32\x0e.proto.Setting\"\xe0\x01\n\x11TokenRelationship\x12\x1f\n\x07tokenId\x18\x01 \x01(\x0b\x32\x0e.proto.TokenID\x12\x0e\n\x06symbol\x18\x02 \x01(\t\x12\x0f\n\x07\x62\x61lance\x18\x03 \x01(\x04\x12(\n\tkycStatus\x18\x04 \x01(\x0e\x32\x15.proto.TokenKycStatus\x12.\n\x0c\x66reezeStatus\x18\x05 \x01(\x0e\x32\x18.proto.TokenFreezeStatus\x12\x10\n\x08\x64\x65\x63imals\x18\x06 \x01(\r\x12\x1d\n\x15\x61utomatic_association\x18\x07 \x01(\x08\"R\n\x0cTokenBalance\x12\x1f\n\x07tokenId\x18\x01 \x01(\x0b\x32\x0e.proto.TokenID\x12\x0f\n\x07\x62\x61lance\x18\x02 \x01(\x04\x12\x10\n\x08\x64\x65\x63imals\x18\x03 \x01(\r\";\n\rTokenBalances\x12*\n\rtokenBalances\x18\x01 \x03(\x0b\x32\x13.proto.TokenBalance\"Z\n\x10TokenAssociation\x12 \n\x08token_id\x18\x01 \x01(\x0b\x32\x0e.proto.TokenID\x12$\n\naccount_id\x18\x02 \x01(\x0b\x32\x10.proto.AccountID*9\n\tTokenType\x12\x13\n\x0f\x46UNGIBLE_COMMON\x10\x00\x12\x17\n\x13NON_FUNGIBLE_UNIQUE\x10\x01*\xac\x01\n\x07SubType\x12\x0b\n\x07\x44\x45\x46\x41ULT\x10\x00\x12\x19\n\x15TOKEN_FUNGIBLE_COMMON\x10\x01\x12\x1d\n\x19TOKEN_NON_FUNGIBLE_UNIQUE\x10\x02\x12*\n&TOKEN_FUNGIBLE_COMMON_WITH_CUSTOM_FEES\x10\x03\x12.\n*TOKEN_NON_FUNGIBLE_UNIQUE_WITH_CUSTOM_FEES\x10\x04*+\n\x0fTokenSupplyType\x12\x0c\n\x08INFINITE\x10\x00\x12\n\n\x06\x46INITE\x10\x01*F\n\x11TokenFreezeStatus\x12\x17\n\x13\x46reezeNotApplicable\x10\x00\x12\n\n\x06\x46rozen\x10\x01\x12\x0c\n\x08Unfrozen\x10\x02*@\n\x0eTokenKycStatus\x12\x14\n\x10KycNotApplicable\x10\x00\x12\x0b\n\x07Granted\x10\x01\x12\x0b\n\x07Revoked\x10\x02*D\n\x10TokenPauseStatus\x12\x16\n\x12PauseNotApplicable\x10\x00\x12\n\n\x06Paused\x10\x01\x12\x0c\n\x08Unpaused\x10\x02*\xc2\x0b\n\x13HederaFunctionality\x12\x08\n\x04NONE\x10\x00\x12\x12\n\x0e\x43ryptoTransfer\x10\x01\x12\x10\n\x0c\x43ryptoUpdate\x10\x02\x12\x10\n\x0c\x43ryptoDelete\x10\x03\x12\x15\n\x11\x43ryptoAddLiveHash\x10\x04\x12\x18\n\x14\x43ryptoDeleteLiveHash\x10\x05\x12\x10\n\x0c\x43ontractCall\x10\x06\x12\x12\n\x0e\x43ontractCreate\x10\x07\x12\x12\n\x0e\x43ontractUpdate\x10\x08\x12\x0e\n\nFileCreate\x10\t\x12\x0e\n\nFileAppend\x10\n\x12\x0e\n\nFileUpdate\x10\x0b\x12\x0e\n\nFileDelete\x10\x0c\x12\x1b\n\x17\x43ryptoGetAccountBalance\x10\r\x12\x1b\n\x17\x43ryptoGetAccountRecords\x10\x0e\x12\x11\n\rCryptoGetInfo\x10\x0f\x12\x15\n\x11\x43ontractCallLocal\x10\x10\x12\x13\n\x0f\x43ontractGetInfo\x10\x11\x12\x17\n\x13\x43ontractGetBytecode\x10\x12\x12\x13\n\x0fGetBySolidityID\x10\x13\x12\x0c\n\x08GetByKey\x10\x14\x12\x15\n\x11\x43ryptoGetLiveHash\x10\x15\x12\x14\n\x10\x43ryptoGetStakers\x10\x16\x12\x13\n\x0f\x46ileGetContents\x10\x17\x12\x0f\n\x0b\x46ileGetInfo\x10\x18\x12\x18\n\x14TransactionGetRecord\x10\x19\x12\x16\n\x12\x43ontractGetRecords\x10\x1a\x12\x10\n\x0c\x43ryptoCreate\x10\x1b\x12\x10\n\x0cSystemDelete\x10\x1c\x12\x12\n\x0eSystemUndelete\x10\x1d\x12\x12\n\x0e\x43ontractDelete\x10\x1e\x12\n\n\x06\x46reeze\x10\x1f\x12\x1b\n\x17\x43reateTransactionRecord\x10 \x12\x1a\n\x16\x43ryptoAccountAutoRenew\x10!\x12\x15\n\x11\x43ontractAutoRenew\x10\"\x12\x12\n\x0eGetVersionInfo\x10#\x12\x19\n\x15TransactionGetReceipt\x10$\x12\x18\n\x14\x43onsensusCreateTopic\x10\x32\x12\x18\n\x14\x43onsensusUpdateTopic\x10\x33\x12\x18\n\x14\x43onsensusDeleteTopic\x10\x34\x12\x19\n\x15\x43onsensusGetTopicInfo\x10\x35\x12\x1a\n\x16\x43onsensusSubmitMessage\x10\x36\x12\x13\n\x0fUncheckedSubmit\x10\x37\x12\x0f\n\x0bTokenCreate\x10\x38\x12\x10\n\x0cTokenGetInfo\x10:\x12\x16\n\x12TokenFreezeAccount\x10;\x12\x18\n\x14TokenUnfreezeAccount\x10<\x12\x1a\n\x16TokenGrantKycToAccount\x10=\x12\x1d\n\x19TokenRevokeKycFromAccount\x10>\x12\x0f\n\x0bTokenDelete\x10?\x12\x0f\n\x0bTokenUpdate\x10@\x12\r\n\tTokenMint\x10\x41\x12\r\n\tTokenBurn\x10\x42\x12\x14\n\x10TokenAccountWipe\x10\x43\x12\x1b\n\x17TokenAssociateToAccount\x10\x44\x12\x1e\n\x1aTokenDissociateFromAccount\x10\x45\x12\x12\n\x0eScheduleCreate\x10\x46\x12\x12\n\x0eScheduleDelete\x10G\x12\x10\n\x0cScheduleSign\x10H\x12\x13\n\x0fScheduleGetInfo\x10I\x12\x1b\n\x17TokenGetAccountNftInfos\x10J\x12\x13\n\x0fTokenGetNftInfo\x10K\x12\x14\n\x10TokenGetNftInfos\x10L\x12\x1a\n\x16TokenFeeScheduleUpdate\x10M\x12\x1b\n\x17NetworkGetExecutionTime\x10N\x12\x0e\n\nTokenPause\x10O\x12\x10\n\x0cTokenUnpause\x10PB&\n\"com.hederahashgraph.api.proto.javaP\x01\x62\x06proto3'
+  serialized_pb=b'\n\x11\x62\x61sic_types.proto\x12\x05proto\x1a\x0ftimestamp.proto\"\x1b\n\x07ShardID\x12\x10\n\x08shardNum\x18\x01 \x01(\x03\"-\n\x07RealmID\x12\x10\n\x08shardNum\x18\x01 \x01(\x03\x12\x10\n\x08realmNum\x18\x02 \x01(\x03\"a\n\tAccountID\x12\x10\n\x08shardNum\x18\x01 \x01(\x03\x12\x10\n\x08realmNum\x18\x02 \x01(\x03\x12\x14\n\naccountNum\x18\x03 \x01(\x03H\x00\x12\x0f\n\x05\x61lias\x18\x04 \x01(\x0cH\x00\x42\t\n\x07\x61\x63\x63ount\"=\n\x06\x46ileID\x12\x10\n\x08shardNum\x18\x01 \x01(\x03\x12\x10\n\x08realmNum\x18\x02 \x01(\x03\x12\x0f\n\x07\x66ileNum\x18\x03 \x01(\x03\"E\n\nContractID\x12\x10\n\x08shardNum\x18\x01 \x01(\x03\x12\x10\n\x08realmNum\x18\x02 \x01(\x03\x12\x13\n\x0b\x63ontractNum\x18\x03 \x01(\x03\"\x87\x01\n\rTransactionID\x12/\n\x15transactionValidStart\x18\x01 \x01(\x0b\x32\x10.proto.Timestamp\x12#\n\taccountID\x18\x02 \x01(\x0b\x32\x10.proto.AccountID\x12\x11\n\tscheduled\x18\x03 \x01(\x08\x12\r\n\x05nonce\x18\x04 \x01(\x05\"D\n\rAccountAmount\x12#\n\taccountID\x18\x01 \x01(\x0b\x32\x10.proto.AccountID\x12\x0e\n\x06\x61mount\x18\x02 \x01(\x12\"<\n\x0cTransferList\x12,\n\x0e\x61\x63\x63ountAmounts\x18\x01 \x03(\x0b\x32\x14.proto.AccountAmount\"{\n\x0bNftTransfer\x12)\n\x0fsenderAccountID\x18\x01 \x01(\x0b\x32\x10.proto.AccountID\x12+\n\x11receiverAccountID\x18\x02 \x01(\x0b\x32\x10.proto.AccountID\x12\x14\n\x0cserialNumber\x18\x03 \x01(\x03\"\x85\x01\n\x11TokenTransferList\x12\x1d\n\x05token\x18\x01 \x01(\x0b\x32\x0e.proto.TokenID\x12\'\n\ttransfers\x18\x02 \x03(\x0b\x32\x14.proto.AccountAmount\x12(\n\x0cnftTransfers\x18\x03 \x03(\x0b\x32\x12.proto.NftTransfer\"2\n\x08\x46raction\x12\x11\n\tnumerator\x18\x01 \x01(\x03\x12\x13\n\x0b\x64\x65nominator\x18\x02 \x01(\x03\"?\n\x07TopicID\x12\x10\n\x08shardNum\x18\x01 \x01(\x03\x12\x10\n\x08realmNum\x18\x02 \x01(\x03\x12\x10\n\x08topicNum\x18\x03 \x01(\x03\"?\n\x07TokenID\x12\x10\n\x08shardNum\x18\x01 \x01(\x03\x12\x10\n\x08realmNum\x18\x02 \x01(\x03\x12\x10\n\x08tokenNum\x18\x03 \x01(\x03\"E\n\nScheduleID\x12\x10\n\x08shardNum\x18\x01 \x01(\x03\x12\x10\n\x08realmNum\x18\x02 \x01(\x03\x12\x13\n\x0bscheduleNum\x18\x03 \x01(\x03\"\x92\x02\n\x03Key\x12\'\n\ncontractID\x18\x01 \x01(\x0b\x32\x11.proto.ContractIDH\x00\x12\x11\n\x07\x65\x64\x32\x35\x35\x31\x39\x18\x02 \x01(\x0cH\x00\x12\x12\n\x08RSA_3072\x18\x03 \x01(\x0cH\x00\x12\x13\n\tECDSA_384\x18\x04 \x01(\x0cH\x00\x12+\n\x0cthresholdKey\x18\x05 \x01(\x0b\x32\x13.proto.ThresholdKeyH\x00\x12!\n\x07keyList\x18\x06 \x01(\x0b\x32\x0e.proto.KeyListH\x00\x12\x19\n\x0f\x45\x43\x44SA_secp256k1\x18\x07 \x01(\x0cH\x00\x12\x34\n\x17\x64\x65legatable_contract_id\x18\x08 \x01(\x0b\x32\x11.proto.ContractIDH\x00\x42\x05\n\x03key\"?\n\x0cThresholdKey\x12\x11\n\tthreshold\x18\x01 \x01(\r\x12\x1c\n\x04keys\x18\x02 \x01(\x0b\x32\x0e.proto.KeyList\"#\n\x07KeyList\x12\x18\n\x04keys\x18\x01 \x03(\x0b\x32\n.proto.Key\"\xd4\x01\n\tSignature\x12\x12\n\x08\x63ontract\x18\x01 \x01(\x0cH\x00\x12\x11\n\x07\x65\x64\x32\x35\x35\x31\x39\x18\x02 \x01(\x0cH\x00\x12\x12\n\x08RSA_3072\x18\x03 \x01(\x0cH\x00\x12\x13\n\tECDSA_384\x18\x04 \x01(\x0cH\x00\x12\x37\n\x12thresholdSignature\x18\x05 \x01(\x0b\x32\x19.proto.ThresholdSignatureH\x00\x12-\n\rsignatureList\x18\x06 \x01(\x0b\x32\x14.proto.SignatureListH\x00:\x02\x18\x01\x42\x0b\n\tsignature\"<\n\x12ThresholdSignature\x12\"\n\x04sigs\x18\x02 \x01(\x0b\x32\x14.proto.SignatureList:\x02\x18\x01\"3\n\rSignatureList\x12\x1e\n\x04sigs\x18\x02 \x03(\x0b\x32\x10.proto.Signature:\x02\x18\x01\"\x9d\x01\n\rSignaturePair\x12\x14\n\x0cpubKeyPrefix\x18\x01 \x01(\x0c\x12\x12\n\x08\x63ontract\x18\x02 \x01(\x0cH\x00\x12\x11\n\x07\x65\x64\x32\x35\x35\x31\x39\x18\x03 \x01(\x0cH\x00\x12\x12\n\x08RSA_3072\x18\x04 \x01(\x0cH\x00\x12\x13\n\tECDSA_384\x18\x05 \x01(\x0cH\x00\x12\x19\n\x0f\x45\x43\x44SA_secp256k1\x18\x06 \x01(\x0cH\x00\x42\x0b\n\tsignature\"5\n\x0cSignatureMap\x12%\n\x07sigPair\x18\x01 \x03(\x0b\x32\x14.proto.SignaturePair\"\xa3\x01\n\rFeeComponents\x12\x0b\n\x03min\x18\x01 \x01(\x03\x12\x0b\n\x03max\x18\x02 \x01(\x03\x12\x10\n\x08\x63onstant\x18\x03 \x01(\x03\x12\x0b\n\x03\x62pt\x18\x04 \x01(\x03\x12\x0b\n\x03vpt\x18\x05 \x01(\x03\x12\x0b\n\x03rbh\x18\x06 \x01(\x03\x12\x0b\n\x03sbh\x18\x07 \x01(\x03\x12\x0b\n\x03gas\x18\x08 \x01(\x03\x12\n\n\x02tv\x18\t \x01(\x03\x12\x0b\n\x03\x62pr\x18\n \x01(\x03\x12\x0c\n\x04sbpr\x18\x0b \x01(\x03\"\x94\x01\n\x16TransactionFeeSchedule\x12\x37\n\x13hederaFunctionality\x18\x01 \x01(\x0e\x32\x1a.proto.HederaFunctionality\x12#\n\x07\x66\x65\x65\x44\x61ta\x18\x02 \x01(\x0b\x32\x0e.proto.FeeDataB\x02\x18\x01\x12\x1c\n\x04\x66\x65\x65s\x18\x03 \x03(\x0b\x32\x0e.proto.FeeData\"\xa8\x01\n\x07\x46\x65\x65\x44\x61ta\x12&\n\x08nodedata\x18\x01 \x01(\x0b\x32\x14.proto.FeeComponents\x12)\n\x0bnetworkdata\x18\x02 \x01(\x0b\x32\x14.proto.FeeComponents\x12)\n\x0bservicedata\x18\x03 \x01(\x0b\x32\x14.proto.FeeComponents\x12\x1f\n\x07subType\x18\x04 \x01(\x0e\x32\x0e.proto.SubType\"y\n\x0b\x46\x65\x65Schedule\x12=\n\x16transactionFeeSchedule\x18\x01 \x03(\x0b\x32\x1d.proto.TransactionFeeSchedule\x12+\n\nexpiryTime\x18\x02 \x01(\x0b\x32\x17.proto.TimestampSeconds\"x\n\x19\x43urrentAndNextFeeSchedule\x12.\n\x12\x63urrentFeeSchedule\x18\x01 \x01(\x0b\x32\x12.proto.FeeSchedule\x12+\n\x0fnextFeeSchedule\x18\x02 \x01(\x0b\x32\x12.proto.FeeSchedule\"4\n\x0fServiceEndpoint\x12\x13\n\x0bipAddressV4\x18\x01 \x01(\x0c\x12\x0c\n\x04port\x18\x02 \x01(\x05\"\x82\x02\n\x0bNodeAddress\x12\x15\n\tipAddress\x18\x01 \x01(\x0c\x42\x02\x18\x01\x12\x12\n\x06portno\x18\x02 \x01(\x05\x42\x02\x18\x01\x12\x10\n\x04memo\x18\x03 \x01(\x0c\x42\x02\x18\x01\x12\x12\n\nRSA_PubKey\x18\x04 \x01(\t\x12\x0e\n\x06nodeId\x18\x05 \x01(\x03\x12\'\n\rnodeAccountId\x18\x06 \x01(\x0b\x32\x10.proto.AccountID\x12\x14\n\x0cnodeCertHash\x18\x07 \x01(\x0c\x12/\n\x0fserviceEndpoint\x18\x08 \x03(\x0b\x32\x16.proto.ServiceEndpoint\x12\x13\n\x0b\x64\x65scription\x18\t \x01(\t\x12\r\n\x05stake\x18\n \x01(\x03\":\n\x0fNodeAddressBook\x12\'\n\x0bnodeAddress\x18\x01 \x03(\x0b\x32\x12.proto.NodeAddress\"Z\n\x0fSemanticVersion\x12\r\n\x05major\x18\x01 \x01(\x05\x12\r\n\x05minor\x18\x02 \x01(\x05\x12\r\n\x05patch\x18\x03 \x01(\x05\x12\x0b\n\x03pre\x18\x04 \x01(\t\x12\r\n\x05\x62uild\x18\x05 \x01(\t\"4\n\x07Setting\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t\x12\x0c\n\x04\x64\x61ta\x18\x03 \x01(\x0c\">\n\x19ServicesConfigurationList\x12!\n\tnameValue\x18\x01 \x03(\x0b\x32\x0e.proto.Setting\"\xe0\x01\n\x11TokenRelationship\x12\x1f\n\x07tokenId\x18\x01 \x01(\x0b\x32\x0e.proto.TokenID\x12\x0e\n\x06symbol\x18\x02 \x01(\t\x12\x0f\n\x07\x62\x61lance\x18\x03 \x01(\x04\x12(\n\tkycStatus\x18\x04 \x01(\x0e\x32\x15.proto.TokenKycStatus\x12.\n\x0c\x66reezeStatus\x18\x05 \x01(\x0e\x32\x18.proto.TokenFreezeStatus\x12\x10\n\x08\x64\x65\x63imals\x18\x06 \x01(\r\x12\x1d\n\x15\x61utomatic_association\x18\x07 \x01(\x08\"R\n\x0cTokenBalance\x12\x1f\n\x07tokenId\x18\x01 \x01(\x0b\x32\x0e.proto.TokenID\x12\x0f\n\x07\x62\x61lance\x18\x02 \x01(\x04\x12\x10\n\x08\x64\x65\x63imals\x18\x03 \x01(\r\";\n\rTokenBalances\x12*\n\rtokenBalances\x18\x01 \x03(\x0b\x32\x13.proto.TokenBalance\"Z\n\x10TokenAssociation\x12 \n\x08token_id\x18\x01 \x01(\x0b\x32\x0e.proto.TokenID\x12$\n\naccount_id\x18\x02 \x01(\x0b\x32\x10.proto.AccountID*9\n\tTokenType\x12\x13\n\x0f\x46UNGIBLE_COMMON\x10\x00\x12\x17\n\x13NON_FUNGIBLE_UNIQUE\x10\x01*\xac\x01\n\x07SubType\x12\x0b\n\x07\x44\x45\x46\x41ULT\x10\x00\x12\x19\n\x15TOKEN_FUNGIBLE_COMMON\x10\x01\x12\x1d\n\x19TOKEN_NON_FUNGIBLE_UNIQUE\x10\x02\x12*\n&TOKEN_FUNGIBLE_COMMON_WITH_CUSTOM_FEES\x10\x03\x12.\n*TOKEN_NON_FUNGIBLE_UNIQUE_WITH_CUSTOM_FEES\x10\x04*+\n\x0fTokenSupplyType\x12\x0c\n\x08INFINITE\x10\x00\x12\n\n\x06\x46INITE\x10\x01*F\n\x11TokenFreezeStatus\x12\x17\n\x13\x46reezeNotApplicable\x10\x00\x12\n\n\x06\x46rozen\x10\x01\x12\x0c\n\x08Unfrozen\x10\x02*@\n\x0eTokenKycStatus\x12\x14\n\x10KycNotApplicable\x10\x00\x12\x0b\n\x07Granted\x10\x01\x12\x0b\n\x07Revoked\x10\x02*D\n\x10TokenPauseStatus\x12\x16\n\x12PauseNotApplicable\x10\x00\x12\n\n\x06Paused\x10\x01\x12\x0c\n\x08Unpaused\x10\x02*\xc2\x0b\n\x13HederaFunctionality\x12\x08\n\x04NONE\x10\x00\x12\x12\n\x0e\x43ryptoTransfer\x10\x01\x12\x10\n\x0c\x43ryptoUpdate\x10\x02\x12\x10\n\x0c\x43ryptoDelete\x10\x03\x12\x15\n\x11\x43ryptoAddLiveHash\x10\x04\x12\x18\n\x14\x43ryptoDeleteLiveHash\x10\x05\x12\x10\n\x0c\x43ontractCall\x10\x06\x12\x12\n\x0e\x43ontractCreate\x10\x07\x12\x12\n\x0e\x43ontractUpdate\x10\x08\x12\x0e\n\nFileCreate\x10\t\x12\x0e\n\nFileAppend\x10\n\x12\x0e\n\nFileUpdate\x10\x0b\x12\x0e\n\nFileDelete\x10\x0c\x12\x1b\n\x17\x43ryptoGetAccountBalance\x10\r\x12\x1b\n\x17\x43ryptoGetAccountRecords\x10\x0e\x12\x11\n\rCryptoGetInfo\x10\x0f\x12\x15\n\x11\x43ontractCallLocal\x10\x10\x12\x13\n\x0f\x43ontractGetInfo\x10\x11\x12\x17\n\x13\x43ontractGetBytecode\x10\x12\x12\x13\n\x0fGetBySolidityID\x10\x13\x12\x0c\n\x08GetByKey\x10\x14\x12\x15\n\x11\x43ryptoGetLiveHash\x10\x15\x12\x14\n\x10\x43ryptoGetStakers\x10\x16\x12\x13\n\x0f\x46ileGetContents\x10\x17\x12\x0f\n\x0b\x46ileGetInfo\x10\x18\x12\x18\n\x14TransactionGetRecord\x10\x19\x12\x16\n\x12\x43ontractGetRecords\x10\x1a\x12\x10\n\x0c\x43ryptoCreate\x10\x1b\x12\x10\n\x0cSystemDelete\x10\x1c\x12\x12\n\x0eSystemUndelete\x10\x1d\x12\x12\n\x0e\x43ontractDelete\x10\x1e\x12\n\n\x06\x46reeze\x10\x1f\x12\x1b\n\x17\x43reateTransactionRecord\x10 \x12\x1a\n\x16\x43ryptoAccountAutoRenew\x10!\x12\x15\n\x11\x43ontractAutoRenew\x10\"\x12\x12\n\x0eGetVersionInfo\x10#\x12\x19\n\x15TransactionGetReceipt\x10$\x12\x18\n\x14\x43onsensusCreateTopic\x10\x32\x12\x18\n\x14\x43onsensusUpdateTopic\x10\x33\x12\x18\n\x14\x43onsensusDeleteTopic\x10\x34\x12\x19\n\x15\x43onsensusGetTopicInfo\x10\x35\x12\x1a\n\x16\x43onsensusSubmitMessage\x10\x36\x12\x13\n\x0fUncheckedSubmit\x10\x37\x12\x0f\n\x0bTokenCreate\x10\x38\x12\x10\n\x0cTokenGetInfo\x10:\x12\x16\n\x12TokenFreezeAccount\x10;\x12\x18\n\x14TokenUnfreezeAccount\x10<\x12\x1a\n\x16TokenGrantKycToAccount\x10=\x12\x1d\n\x19TokenRevokeKycFromAccount\x10>\x12\x0f\n\x0bTokenDelete\x10?\x12\x0f\n\x0bTokenUpdate\x10@\x12\r\n\tTokenMint\x10\x41\x12\r\n\tTokenBurn\x10\x42\x12\x14\n\x10TokenAccountWipe\x10\x43\x12\x1b\n\x17TokenAssociateToAccount\x10\x44\x12\x1e\n\x1aTokenDissociateFromAccount\x10\x45\x12\x12\n\x0eScheduleCreate\x10\x46\x12\x12\n\x0eScheduleDelete\x10G\x12\x10\n\x0cScheduleSign\x10H\x12\x13\n\x0fScheduleGetInfo\x10I\x12\x1b\n\x17TokenGetAccountNftInfos\x10J\x12\x13\n\x0fTokenGetNftInfo\x10K\x12\x14\n\x10TokenGetNftInfos\x10L\x12\x1a\n\x16TokenFeeScheduleUpdate\x10M\x12\x1b\n\x17NetworkGetExecutionTime\x10N\x12\x0e\n\nTokenPause\x10O\x12\x10\n\x0cTokenUnpause\x10PB&\n\"com.hederahashgraph.api.proto.javaP\x01\x62\x06proto3'
   ,
   dependencies=[timestamp__pb2.DESCRIPTOR,])
 
@@ -45,8 +45,8 @@ _TOKENTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=3690,
-  serialized_end=3747,
+  serialized_start=3844,
+  serialized_end=3901,
 )
 _sym_db.RegisterEnumDescriptor(_TOKENTYPE)
 
@@ -86,8 +86,8 @@ _SUBTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=3750,
-  serialized_end=3922,
+  serialized_start=3904,
+  serialized_end=4076,
 )
 _sym_db.RegisterEnumDescriptor(_SUBTYPE)
 
@@ -112,8 +112,8 @@ _TOKENSUPPLYTYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=3924,
-  serialized_end=3967,
+  serialized_start=4078,
+  serialized_end=4121,
 )
 _sym_db.RegisterEnumDescriptor(_TOKENSUPPLYTYPE)
 
@@ -143,8 +143,8 @@ _TOKENFREEZESTATUS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=3969,
-  serialized_end=4039,
+  serialized_start=4123,
+  serialized_end=4193,
 )
 _sym_db.RegisterEnumDescriptor(_TOKENFREEZESTATUS)
 
@@ -174,8 +174,8 @@ _TOKENKYCSTATUS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=4041,
-  serialized_end=4105,
+  serialized_start=4195,
+  serialized_end=4259,
 )
 _sym_db.RegisterEnumDescriptor(_TOKENKYCSTATUS)
 
@@ -205,8 +205,8 @@ _TOKENPAUSESTATUS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=4107,
-  serialized_end=4175,
+  serialized_start=4261,
+  serialized_end=4329,
 )
 _sym_db.RegisterEnumDescriptor(_TOKENPAUSESTATUS)
 
@@ -556,8 +556,8 @@ _HEDERAFUNCTIONALITY = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=4178,
-  serialized_end=5652,
+  serialized_start=4332,
+  serialized_end=5806,
 )
 _sym_db.RegisterEnumDescriptor(_HEDERAFUNCTIONALITY)
 
@@ -750,6 +750,13 @@ _ACCOUNTID = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='alias', full_name='proto.AccountID.alias', index=3,
+      number=4, type=12, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"",
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -761,9 +768,14 @@ _ACCOUNTID = _descriptor.Descriptor(
   syntax='proto3',
   extension_ranges=[],
   oneofs=[
+    _descriptor.OneofDescriptor(
+      name='account', full_name='proto.AccountID.account',
+      index=0, containing_type=None,
+      create_key=_descriptor._internal_create_key,
+    fields=[]),
   ],
   serialized_start=121,
-  serialized_end=188,
+  serialized_end=218,
 )
 
 
@@ -808,8 +820,8 @@ _FILEID = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=190,
-  serialized_end=251,
+  serialized_start=220,
+  serialized_end=281,
 )
 
 
@@ -854,8 +866,8 @@ _CONTRACTID = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=253,
-  serialized_end=322,
+  serialized_start=283,
+  serialized_end=352,
 )
 
 
@@ -888,6 +900,13 @@ _TRANSACTIONID = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='nonce', full_name='proto.TransactionID.nonce', index=3,
+      number=4, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -900,8 +919,8 @@ _TRANSACTIONID = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=324,
-  serialized_end=444,
+  serialized_start=355,
+  serialized_end=490,
 )
 
 
@@ -939,8 +958,8 @@ _ACCOUNTAMOUNT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=446,
-  serialized_end=514,
+  serialized_start=492,
+  serialized_end=560,
 )
 
 
@@ -971,8 +990,8 @@ _TRANSFERLIST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=516,
-  serialized_end=576,
+  serialized_start=562,
+  serialized_end=622,
 )
 
 
@@ -1017,8 +1036,8 @@ _NFTTRANSFER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=578,
-  serialized_end=701,
+  serialized_start=624,
+  serialized_end=747,
 )
 
 
@@ -1063,8 +1082,8 @@ _TOKENTRANSFERLIST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=704,
-  serialized_end=837,
+  serialized_start=750,
+  serialized_end=883,
 )
 
 
@@ -1102,8 +1121,8 @@ _FRACTION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=839,
-  serialized_end=889,
+  serialized_start=885,
+  serialized_end=935,
 )
 
 
@@ -1148,8 +1167,8 @@ _TOPICID = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=891,
-  serialized_end=954,
+  serialized_start=937,
+  serialized_end=1000,
 )
 
 
@@ -1194,8 +1213,8 @@ _TOKENID = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=956,
-  serialized_end=1019,
+  serialized_start=1002,
+  serialized_end=1065,
 )
 
 
@@ -1240,8 +1259,8 @@ _SCHEDULEID = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1021,
-  serialized_end=1090,
+  serialized_start=1067,
+  serialized_end=1136,
 )
 
 
@@ -1295,6 +1314,20 @@ _KEY = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='ECDSA_secp256k1', full_name='proto.Key.ECDSA_secp256k1', index=6,
+      number=7, type=12, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"",
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='delegatable_contract_id', full_name='proto.Key.delegatable_contract_id', index=7,
+      number=8, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -1312,8 +1345,8 @@ _KEY = _descriptor.Descriptor(
       create_key=_descriptor._internal_create_key,
     fields=[]),
   ],
-  serialized_start=1093,
-  serialized_end=1286,
+  serialized_start=1139,
+  serialized_end=1413,
 )
 
 
@@ -1351,8 +1384,8 @@ _THRESHOLDKEY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1288,
-  serialized_end=1351,
+  serialized_start=1415,
+  serialized_end=1478,
 )
 
 
@@ -1383,8 +1416,8 @@ _KEYLIST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1353,
-  serialized_end=1388,
+  serialized_start=1480,
+  serialized_end=1515,
 )
 
 
@@ -1455,8 +1488,8 @@ _SIGNATURE = _descriptor.Descriptor(
       create_key=_descriptor._internal_create_key,
     fields=[]),
   ],
-  serialized_start=1391,
-  serialized_end=1603,
+  serialized_start=1518,
+  serialized_end=1730,
 )
 
 
@@ -1487,8 +1520,8 @@ _THRESHOLDSIGNATURE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1605,
-  serialized_end=1665,
+  serialized_start=1732,
+  serialized_end=1792,
 )
 
 
@@ -1519,8 +1552,8 @@ _SIGNATURELIST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1667,
-  serialized_end=1718,
+  serialized_start=1794,
+  serialized_end=1845,
 )
 
 
@@ -1567,6 +1600,13 @@ _SIGNATUREPAIR = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='ECDSA_secp256k1', full_name='proto.SignaturePair.ECDSA_secp256k1', index=5,
+      number=6, type=12, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"",
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -1584,8 +1624,8 @@ _SIGNATUREPAIR = _descriptor.Descriptor(
       create_key=_descriptor._internal_create_key,
     fields=[]),
   ],
-  serialized_start=1721,
-  serialized_end=1851,
+  serialized_start=1848,
+  serialized_end=2005,
 )
 
 
@@ -1616,8 +1656,8 @@ _SIGNATUREMAP = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1853,
-  serialized_end=1906,
+  serialized_start=2007,
+  serialized_end=2060,
 )
 
 
@@ -1718,8 +1758,8 @@ _FEECOMPONENTS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1909,
-  serialized_end=2072,
+  serialized_start=2063,
+  serialized_end=2226,
 )
 
 
@@ -1764,8 +1804,8 @@ _TRANSACTIONFEESCHEDULE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2075,
-  serialized_end=2223,
+  serialized_start=2229,
+  serialized_end=2377,
 )
 
 
@@ -1817,8 +1857,8 @@ _FEEDATA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2226,
-  serialized_end=2394,
+  serialized_start=2380,
+  serialized_end=2548,
 )
 
 
@@ -1856,8 +1896,8 @@ _FEESCHEDULE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2396,
-  serialized_end=2517,
+  serialized_start=2550,
+  serialized_end=2671,
 )
 
 
@@ -1895,8 +1935,8 @@ _CURRENTANDNEXTFEESCHEDULE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2519,
-  serialized_end=2639,
+  serialized_start=2673,
+  serialized_end=2793,
 )
 
 
@@ -1934,8 +1974,8 @@ _SERVICEENDPOINT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2641,
-  serialized_end=2693,
+  serialized_start=2795,
+  serialized_end=2847,
 )
 
 
@@ -2029,8 +2069,8 @@ _NODEADDRESS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2696,
-  serialized_end=2954,
+  serialized_start=2850,
+  serialized_end=3108,
 )
 
 
@@ -2061,8 +2101,8 @@ _NODEADDRESSBOOK = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=2956,
-  serialized_end=3014,
+  serialized_start=3110,
+  serialized_end=3168,
 )
 
 
@@ -2121,8 +2161,8 @@ _SEMANTICVERSION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3016,
-  serialized_end=3106,
+  serialized_start=3170,
+  serialized_end=3260,
 )
 
 
@@ -2167,8 +2207,8 @@ _SETTING = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3108,
-  serialized_end=3160,
+  serialized_start=3262,
+  serialized_end=3314,
 )
 
 
@@ -2199,8 +2239,8 @@ _SERVICESCONFIGURATIONLIST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3162,
-  serialized_end=3224,
+  serialized_start=3316,
+  serialized_end=3378,
 )
 
 
@@ -2273,8 +2313,8 @@ _TOKENRELATIONSHIP = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3227,
-  serialized_end=3451,
+  serialized_start=3381,
+  serialized_end=3605,
 )
 
 
@@ -2319,8 +2359,8 @@ _TOKENBALANCE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3453,
-  serialized_end=3535,
+  serialized_start=3607,
+  serialized_end=3689,
 )
 
 
@@ -2351,8 +2391,8 @@ _TOKENBALANCES = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3537,
-  serialized_end=3596,
+  serialized_start=3691,
+  serialized_end=3750,
 )
 
 
@@ -2390,10 +2430,16 @@ _TOKENASSOCIATION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=3598,
-  serialized_end=3688,
+  serialized_start=3752,
+  serialized_end=3842,
 )
 
+_ACCOUNTID.oneofs_by_name['account'].fields.append(
+  _ACCOUNTID.fields_by_name['accountNum'])
+_ACCOUNTID.fields_by_name['accountNum'].containing_oneof = _ACCOUNTID.oneofs_by_name['account']
+_ACCOUNTID.oneofs_by_name['account'].fields.append(
+  _ACCOUNTID.fields_by_name['alias'])
+_ACCOUNTID.fields_by_name['alias'].containing_oneof = _ACCOUNTID.oneofs_by_name['account']
 _TRANSACTIONID.fields_by_name['transactionValidStart'].message_type = timestamp__pb2._TIMESTAMP
 _TRANSACTIONID.fields_by_name['accountID'].message_type = _ACCOUNTID
 _ACCOUNTAMOUNT.fields_by_name['accountID'].message_type = _ACCOUNTID
@@ -2406,6 +2452,7 @@ _TOKENTRANSFERLIST.fields_by_name['nftTransfers'].message_type = _NFTTRANSFER
 _KEY.fields_by_name['contractID'].message_type = _CONTRACTID
 _KEY.fields_by_name['thresholdKey'].message_type = _THRESHOLDKEY
 _KEY.fields_by_name['keyList'].message_type = _KEYLIST
+_KEY.fields_by_name['delegatable_contract_id'].message_type = _CONTRACTID
 _KEY.oneofs_by_name['key'].fields.append(
   _KEY.fields_by_name['contractID'])
 _KEY.fields_by_name['contractID'].containing_oneof = _KEY.oneofs_by_name['key']
@@ -2424,6 +2471,12 @@ _KEY.fields_by_name['thresholdKey'].containing_oneof = _KEY.oneofs_by_name['key'
 _KEY.oneofs_by_name['key'].fields.append(
   _KEY.fields_by_name['keyList'])
 _KEY.fields_by_name['keyList'].containing_oneof = _KEY.oneofs_by_name['key']
+_KEY.oneofs_by_name['key'].fields.append(
+  _KEY.fields_by_name['ECDSA_secp256k1'])
+_KEY.fields_by_name['ECDSA_secp256k1'].containing_oneof = _KEY.oneofs_by_name['key']
+_KEY.oneofs_by_name['key'].fields.append(
+  _KEY.fields_by_name['delegatable_contract_id'])
+_KEY.fields_by_name['delegatable_contract_id'].containing_oneof = _KEY.oneofs_by_name['key']
 _THRESHOLDKEY.fields_by_name['keys'].message_type = _KEYLIST
 _KEYLIST.fields_by_name['keys'].message_type = _KEY
 _SIGNATURE.fields_by_name['thresholdSignature'].message_type = _THRESHOLDSIGNATURE
@@ -2460,6 +2513,9 @@ _SIGNATUREPAIR.fields_by_name['RSA_3072'].containing_oneof = _SIGNATUREPAIR.oneo
 _SIGNATUREPAIR.oneofs_by_name['signature'].fields.append(
   _SIGNATUREPAIR.fields_by_name['ECDSA_384'])
 _SIGNATUREPAIR.fields_by_name['ECDSA_384'].containing_oneof = _SIGNATUREPAIR.oneofs_by_name['signature']
+_SIGNATUREPAIR.oneofs_by_name['signature'].fields.append(
+  _SIGNATUREPAIR.fields_by_name['ECDSA_secp256k1'])
+_SIGNATUREPAIR.fields_by_name['ECDSA_secp256k1'].containing_oneof = _SIGNATUREPAIR.oneofs_by_name['signature']
 _SIGNATUREMAP.fields_by_name['sigPair'].message_type = _SIGNATUREPAIR
 _TRANSACTIONFEESCHEDULE.fields_by_name['hederaFunctionality'].enum_type = _HEDERAFUNCTIONALITY
 _TRANSACTIONFEESCHEDULE.fields_by_name['feeData'].message_type = _FEEDATA

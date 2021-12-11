@@ -28,7 +28,7 @@ setuptools.setup(
     ],
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
-    install_requires=['grpcio>=1.34.1'],
+    install_requires=['grpcio>=1.41.1','protobuf>=3.19.1'],
     python_requires=">=3.7",
     include_package_data=True,
     package_data={ "hedera_proto": ["*.xml"]},
