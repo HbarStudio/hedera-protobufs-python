@@ -3,8 +3,8 @@ import setuptools
 import xml.etree.ElementTree as ET
 
 pom = ET.parse("./src/hedera_proto/pom.xml")
-version = [a.text for a in pom.getroot().getchildren() if a.tag == '{http://maven.apache.org/POM/4.0.0}version'][0]
-version = version.split("-")[0]
+version_element = pom.getroot().find('{http://maven.apache.org/POM/4.0.0}version')
+version = version_element.text.split('-')[0]
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
@@ -17,9 +17,9 @@ setuptools.setup(
     description="Hedera Protobufs",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/carady/hedera-protobufs-python",
+    url="https://github.com/HbarStudio/hedera-protobufs-python",
     project_urls={
-        "Bug Tracker": "https://github.com/carady/hedera-protobufs-python/issues",
+        "Bug Tracker": "https://github.com/HbarStudio/hedera-protobufs-python/issues",
     },
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -28,8 +28,8 @@ setuptools.setup(
     ],
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
-    install_requires=['grpcio>=1.41.1','protobuf>=3.19.1'],
-    python_requires=">=3.7",
+    install_requires=['grpcio>=1.59.3'],
+    python_requires=">=3.8",
     include_package_data=True,
     package_data={ "hedera_proto": ["*.xml"]},
 )
